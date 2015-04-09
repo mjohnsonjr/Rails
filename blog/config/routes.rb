@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :comments
+#  resources :comments
   
-  resources :posts do
+  resources :posts do # creates 7 RESTful routes.  
     resources :comments
 end
 
