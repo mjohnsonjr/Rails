@@ -1,0 +1,33 @@
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+
+a:link, a:visited {
+	color:black;
+}
+
+a:hover {
+	color:purple;
+}
+
+/* Bootstrap mods */
+.center-pills {
+	display: flex;
+	justify-content: center;
+}
+
+/* ID-based mods */
+
+#navigation-container {
+	padding: 15px;
+}
+
+#info-body {
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+}
