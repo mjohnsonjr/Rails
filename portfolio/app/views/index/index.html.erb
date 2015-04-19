@@ -1,4 +1,18 @@
 <!-- This data is inserted in a "yeild" in the layouts file index.html.erb -->
 <div class="container" id="info-body">
-	The content of the document......
+	<div>
+		<p>
+		Thanks for visiting my online portfolio. My name is Michael/Mike/Waldo, and I am a Computer Engineering graduate from Iowa State University.<br> 
+		</p>
+		<p>On here you will be thouroughly entertained by being able check out my resume, objectives, and some past projects and work experience.  Feel free to contact me at any time on LinkedIn or by email.
+		</p>
+	</div>
+
+	<div>
+		<p>
+		<%= @posts.first.title %>
+		<br>
+		<%= @posts.first.body %>
+		</p>
+	</div>
 </div>

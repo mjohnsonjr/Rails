@@ -14,10 +14,26 @@ a:hover {
 	color:purple;
 }
 
+p {
+   word-wrap: break-word;
+}
+
 /* Bootstrap mods */
 .center-pills {
 	display: flex;
 	justify-content: center;
+}
+
+.green > li.active > a {
+	background-color: #a2d900;
+}
+
+.green > li.active > a:hover {
+	background-color: #a2e000;
+}
+
+.container > div {
+  display: inline-block;
 }
 
 /* ID-based mods */
