@@ -33,7 +33,7 @@ p {
 }
 
 .container > div {
-  display: inline-block;
+  display: block;
 }
 
 /* ID-based mods */
