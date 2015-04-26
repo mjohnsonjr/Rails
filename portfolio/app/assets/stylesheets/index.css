@@ -5,7 +5,6 @@ h1 {
     line-height: 70px;
 }
 
-
 a:link, a:visited {
 	color:black;
 }
@@ -16,6 +15,15 @@ a:hover {
 
 p {
    word-wrap: break-word;
+}
+
+.center-div {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.images {
+	padding-left: 1px;
 }
 
 /* Bootstrap mods */
@@ -34,6 +42,19 @@ p {
 
 .container > div {
   display: block;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 
 /* ID-based mods */
