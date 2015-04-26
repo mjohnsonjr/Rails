@@ -8,31 +8,48 @@
 
 </head>
 <body>
-	<div class="container" id="name">
-		<h1 class="text-center">Michael Johnson</h1>
-	</div>
-	<div class="container" id="navigation-container">
-			<ul class="nav nav-pills green center-pills" id="list">
-				<li role="presentation" class="active tab-pane" id="about">
-					<a class="nav-link" href="/">About</a>
-				</li>
-				<li role="presentation" class="tab-pane" id="resume">
-					<a class="nav-link" href="/resume">Resume</a>
-				</li>
-				<li role="presentation" class="tab-pane" id="projects">
-					<a class="nav-link" href="/projects">Projects</a>
-				</li>
-				<li role="presentation" class="tab-pane" id="github">
-					<a class="nav-link" href="http://www.github.com/mjohnsonjr">Github</a>
-				</li>
-				<li role="presentation" class="tab-pane" id="linkedin">
-					<a class="nav-link" href="http://www.linkedin.com/in/johnsonjrma">LinkedIn</a>
-				</li>
-			</ul>
-			<hr/>
-	</div>
+    <!-- navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Michael Johnson</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" id="list">
+            <li id="about" class="active"><a href="/">About</a></li>
+            <li id="projects"><a href="/projects">Projects</a></li>
+            <li id="resume"><a href="/resume">Resume</a></li>
+            <li id="github"><a href="http://www.github.com/mjohnsonjr">Github</a></li>
+            <li id="linkedin"><a href="http://www.linkedin.com/in/johnsonjrma">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+<!-- individual page structure -->
 <%= yield %>
 
+<div id="footerwrap">
+	<div class="container">
+		<div class="row centered">
+			<div class="col-lg-4">
+				<p><b>COMPUTER ENGINEER, SOFTWARE DEVELOPER & POKEMON MASTER</b></p>
+			</div>
+		
+			<div class="col-lg-4">
+				<p>Currently living in the City of Fountains.</p>
+			</div>
+			<div class="col-lg-4">
+				<p>maj@alumni.iastate.edu</p>
+			</div>	
+		</div>
+	</div>
+</div>
 </body>
 </html>
