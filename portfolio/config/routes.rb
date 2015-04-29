@@ -9,6 +9,14 @@ Rails.application.routes.draw do
   get '/resume' => 'index#resume';
   get '/projects' => 'index#projects';
   get '/contact' => 'index#contact';
+  
+  #Projects routes
+  get 'projects/microcart' => 'index#projects_microcart'
+  get 'projects/timely' => 'index#projects_timely'
+  get 'projects/soundtools' => 'index#projects_soundtools'
+  get 'projects/tixface' => 'index#projects_tixface'
+  get 'projects/fast' => 'index#projects_fast'
+  get 'projects/conwayslife' => 'index#projects_conwayslife'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

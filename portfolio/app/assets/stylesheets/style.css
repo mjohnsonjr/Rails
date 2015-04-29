@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
    Wrap Sections
    ========================================================================== */
 
-#aboutwrap {
+#aboutwrap, #projectwrap {
 	background: url() no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-#aboutwrap h1 {
+#aboutwrap h1, #projectwrap h1 {
 	color:#ffffff;
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
-#aboutwrap h4 {
+#aboutwrap h4, #projectwrap h4 {
 	font-weight: 400;
 	color: #ffffff
 }

@@ -18,8 +18,27 @@ class IndexController < ActionController::Base
   	# blank
   end
 
-  def contact
-	# blank
+  def projects_microcart
+      render "index/Projects/microcart"
   end
 
+  def projects_timely
+      render "index/Projects/timely"
+  end
+  
+  def projects_soundtools
+      render "index/Projects/soundtools"
+  end
+  
+  def projects_tixface
+      render "index/Projects/tixface"
+  end
+  
+  def projects_fast
+      render "index/Projects/fast"
+  end
+  
+  def projects_conwayslife
+      render "index/Projects/conwayslife"
+  end
 end
