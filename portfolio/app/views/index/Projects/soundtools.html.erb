@@ -16,6 +16,13 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>ABOUT THE PROJECT</h4>
 				<p>
+					A multitude of command line tools that allow the user to create and manipulate various forms of audio files.  There are two supported file formats, WAV and a custom text-based format.  The different utilities and their features are the following:<br>
+					<b>Sndinfo</b> - Displays the audio information of a .wav or .cs229 file. This information includes: filename, filetype, sample rate, bit depth, number of channels, number of samples, and the length of the audio file in seconds.<br>
+					<b>Sndcat</b> - Sound concatenation allows the user to concatenate two or more different audio files together.  These audio files can even be of different file types, and the output type can be specified.<br>
+					<b>Sndmix</b> - Sound mix mixes two different audio files together by channel. Warning, the result often sounds terrible :).<br>
+					<b>Sndgen</b> - Sound generation allows you to generate an audio file by specifying the characteristics of an ADSR style sound envelope.  See the README for specific instructions.<br>
+					<b>Sndplay</b> – Sound play will generate an audio file based on a specific input filetype that informs sndplay what types of audio to generate.  See the README or the respository for specific examples.<br>
+					These command line tools were all written in C, and intended to be used on unix-based systems.  They will likely work on Windows as well with an emulator such as Cygwin.
 				</p>
 				<h4>TECHNOLOGIES USED</h4>
 				<p>
