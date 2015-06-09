@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   get 'projects/fast' => 'index#projects_fast'
   get 'projects/conwayslife' => 'index#projects_conwayslife'
 
+  get 'projects/microcart/finaldesigndoc' => 'index#projects_microcart_design_doc'
+  get 'projects/fast/apk' => 'index#projects_fast_apk'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

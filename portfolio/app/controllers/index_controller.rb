@@ -22,6 +22,11 @@ class IndexController < ActionController::Base
       render "index/Projects/microcart"
   end
 
+  def projects_microcart_design_doc
+    pdf_filename = File.join(Rails.root, 'app', 'assets', 'documents', "FinalDocumentation.pdf")
+    send_file(pdf_filename, :filename => "MicroCART1410DesignDocument.pdf", :disposition => 'inline', :type => "application/pdf")
+  end
+
   def projects_timely
       render "index/Projects/timely"
   end
@@ -37,7 +42,10 @@ class IndexController < ActionController::Base
   def projects_fast
       render "index/Projects/fast"
   end
-  
+
+  def projects_fast_apk
+      send_file Rails.root.join('app', 'assets', 'files', 'fast.apk'), :type=>"application/apk", :x_sendfile=>true
+  end
   def projects_conwayslife
       render "index/Projects/conwayslife"
   end
