@@ -34,6 +34,10 @@ class IndexController < ActionController::Base
   def projects_soundtools
       render "index/Projects/soundtools"
   end
+
+  def projects_soundtools_readme
+    send_file( Rails.root.join('app', 'assets', 'files', 'SoundTools_README.txt'), :disposition => 'inline', :type=>"application/text")
+  end
   
   def projects_tixface
       render "index/Projects/tixface"
@@ -44,7 +48,7 @@ class IndexController < ActionController::Base
   end
 
   def projects_fast_apk
-      send_file Rails.root.join('app', 'assets', 'files', 'fast.apk'), :type=>"application/apk", :x_sendfile=>true
+    send_file Rails.root.join('app', 'assets', 'files', 'fast.apk'), :type=>"application/apk", :x_sendfile=>true
   end
   def projects_conwayslife
       render "index/Projects/conwayslife"

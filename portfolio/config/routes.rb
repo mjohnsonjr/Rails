@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   get 'projects/microcart/finaldesigndoc' => 'index#projects_microcart_design_doc'
   get 'projects/fast/apk' => 'index#projects_fast_apk'
+  get 'projects/soundtools/readme' => 'index#projects_soundtools_readme'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
